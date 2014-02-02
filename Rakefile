@@ -1,17 +1,12 @@
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
 require 'motion/project/template/ios'
-require 'ProMotion'
+require 'motion-support'
 
-begin
-  require 'bundler'
-  Bundler.require
-rescue LoadError => e
-  puts
-  puts "ERROR: #{e.message}"
-  puts
-end
+require 'bundler'
+Bundler.require
 
 Motion::Project::App.setup do |app|
   app.name = 'test'
+  app.detect_dependencies = false
 end
