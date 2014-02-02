@@ -1,8 +1,15 @@
+GIT
+  remote: git://github.com/clearsightstudio/ProMotion.git
+  revision: 095cb5204db697e01391371d561bd3d87b112fdd
+  branch: edge
+  specs:
+    ProMotion (1.1.1)
+      methadone
+      motion-require (>= 0.0.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
-    ProMotion (1.1.2)
-      methadone
     bubble-wrap (1.4.0)
     formotion (1.6)
       bubble-wrap (~> 1.4.0)
@@ -18,7 +25,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ProMotion (~> 1.1.0)
+  ProMotion!
   formotion
   motion-support (>= 0.2.6)
   rake
